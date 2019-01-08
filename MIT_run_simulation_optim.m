@@ -105,9 +105,9 @@ for i=1:expected_sims
         load([dirname '\' output_name '.mat'])
         
         if isfield(sim_input,'TSR_orig')
-            exitflag(i,j) = 1;
+            exitflag(lon,lat) = 1;
         else
-            exitflag(i,j) = 0;
+            exitflag(lon,lat) = 0;
         end
         
     else
@@ -116,15 +116,17 @@ for i=1:expected_sims
         disp(['Longitude: ' num2str(lon) '; Latitude: ' num2str(lat)])
         
         % Optimize TSR
-        disp('Starting TSR optimization')
+        disp('*** Starting TSR optimization ***')
+        time_run_opt0 = tic;
         fun = @(x) vatt_dmst_optim(vel_input,x);
-        [tsr_opt(i,j), ~, exitflag(i,j)] = fminbnd(fun,2,3); % TSR_min = 2, TSR_max = 3 %
+        [tsr_opt(lon,lat), ~, exitflag(lon,lat)] = fminbnd(fun,2,3); % TSR_min = 2, TSR_max = 3 %
+        time_run_opt = toc(time_run_opt0);
         
-        if exitflag(i,j) == 1
-            disp('Optimization succesfully completed.')
-            [data_post, ~, ~, ~, ~, ~, ~, ~] = vatt_dmst(vel_input, [dirname '\' output_name], tsr_opt(i,j));
+        if exitflag(lon,lat) == 1
+            disp(['*** Optimization succesfully completed in ' char(duration([0, 0, time_run_opt])) '. Optimal TSR: ' num2str(tsr_opt(lon,lat)) ' ***'])
+            [data_post, ~, ~, ~, ~, ~, ~, ~] = vatt_dmst(vel_input, [dirname '\' output_name], tsr_opt(lon,lat));
         else
-            disp('Optimization failed. Using default TSR...')
+            disp(['Optimization failed after ' char(duration([0, 0, time_run_opt])) '. Using default TSR. ***'])
             [data_post, ~, ~, ~, ~, ~, ~, ~] = vatt_dmst(vel_input, [dirname '\' output_name]); % Use default TSR %
         end
         
@@ -134,6 +136,7 @@ for i=1:expected_sims
     p(lon,lat) = data_post.cp_tot * data_post.ref_cp;
     
     time_run(i) = toc(time_run0);
+    disp(['Total simulation time: ' char(duration([0, 0, time_run(i)]))])
 end
 
 time_end = toc(dmst_run);
