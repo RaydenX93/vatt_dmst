@@ -116,12 +116,15 @@ for i=1:expected_sims
         disp(['Longitude: ' num2str(lon) '; Latitude: ' num2str(lat)])
         
         % Optimize TSR
+        disp('Starting TSR optimization')
         fun = @(x) vatt_dmst_optim(vel_input,x);
         [tsr_opt(i,j), ~, exitflag(i,j)] = fminbnd(fun,2,3); % TSR_min = 2, TSR_max = 3 %
         
         if exitflag(i,j) == 1
+            disp('Optimization succesfully completed.')
             [data_post, ~, ~, ~, ~, ~, ~, ~] = vatt_dmst(vel_input, [dirname '\' output_name], tsr_opt(i,j));
         else
+            disp('Optimization failed. Using default TSR...')
             [data_post, ~, ~, ~, ~, ~, ~, ~] = vatt_dmst(vel_input, [dirname '\' output_name]); % Use default TSR %
         end
         
