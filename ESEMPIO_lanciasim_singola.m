@@ -13,3 +13,7 @@ depth = [0 -2 -15];
 vel_x = [0 0.25 1];
 vel_input = [depth', vel_x'];
 %[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, 'simulazione3d');
+
+%% Lancia simulazione 3D e imponi TSR, a prescindere da init_input.m %%
+%[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, 2, 'simulazione3d');
+[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, 'simulazione3d', 2);
