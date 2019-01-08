@@ -11,5 +11,5 @@ fun = @(x) vatt_dmst_optim(vel_input,x);
 
  function cp = vatt_dmst_optim(vel_input, x)
     [data_post, ~, ~, ~, ~, ~, ~, ~] = vatt_dmst(vel_input, 'simulazione3d_optim', x);
-    cp = - data_post.cp_tot;
+    cp = - data_post.cp_tot; % negative because fminbnd looks for a minimum %
  end

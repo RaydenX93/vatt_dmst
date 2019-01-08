@@ -53,6 +53,7 @@ end
 
 % Override input TSR data %
 if exist('tsr_override','var')
+    sim_input.TSR_orig = sim_input.TSR;
     sim_input.TSR = tsr_override;
 end
 
