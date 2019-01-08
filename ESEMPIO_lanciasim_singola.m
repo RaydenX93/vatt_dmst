@@ -1,0 +1,15 @@
+close all
+clear all
+clc
+
+%% Lancia simulazione 2D %%
+%[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(1.75);
+
+%% Lancia simulazione 2D e specifica nome file output %%
+%[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(1.75, 'simulazione');
+
+%% Lancia simulazione 3D e specifica nome file output %%
+depth = [0 -2 -15];
+vel_x = [0 0.25 1];
+vel_input = [depth', vel_x'];
+%[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, 'simulazione3d');
