@@ -33,8 +33,19 @@ if nz ~= 1 % 3D simulation %
     % Perciò U_inf è la media pesata dei moduli della velocità su ogni piano
     
     %% Evaluate omega and check that it is at least 0.1 rad/s %%
-    om_func = @(x) mean(x .* r ./ U_inf_zeta) - TSR;
-    omega = fzero(om_func,1);
+    %om_func = @(x) mean(x .* r ./ U_inf_zeta) - TSR;
+    %omega = fzero(om_func,1);
+    
+    if sim_input.om_calc == 1 % weighed average over plane power %
+        omega = (TSR / r) * (sum(U_inf_zeta.^3) / sum(U_inf_zeta.^2));
+        
+    elseif sim_input.om_calc == 2 % use Cp-TSR curve %
+        
+        
+    else % normal average of TSR planes %
+        omega = (TSR / r) * (nz / sum(1./U_inf_zeta));
+        
+    end   
     
     TSR_plane = omega .* r ./ U_inf_zeta;
     
