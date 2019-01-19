@@ -1,4 +1,4 @@
-function [data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, output_file)
+function [data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, varargin)
 % VATT DMST code v1.0
 % by Stefano Deluca
 %
@@ -6,10 +6,19 @@ function [data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim
 
 %% Initial Cleanup %%
 close all
+
+for k = 1:length(varargin)
+    if ischar(varargin{k}) 
+        output_file = varargin{k};
+    elseif isfloat(varargin{k})
+        tsr_override = varargin{k};
+    end
+end
+
 % Check output_file input %
-if nargin < 2
+if exist('output_file','var') == 0
     date_str = fix(clock);
-    output_file = ['vatt_dmst_output_' num2str(date_str(1)) '_' num2str(date_str(2)) '_' num2str(date_str(3)) '_' num2str(date_str(4)) '_' num2str(date_str(5)) '_' num2str(date_str(6))];
+    output_file = ['vatt_dmst_output_' num2str(date_str(1)) '_' num2str(date_str(2)) '_' num2str(date_str(3)) '_' num2str(date_str(4)) '_' num2str(date_str(5)) '_' num2str(date_str(6))];   
 end
 
 % Start console logging %
@@ -40,6 +49,12 @@ else
     if isscalar(vel_input) ~= 1
         error('Velocity input must be a scalar for 2D simulation')
     end
+end
+
+% Override input TSR data %
+if exist('tsr_override','var')
+    sim_input.TSR_orig = sim_input.TSR;
+    sim_input.TSR = tsr_override;
 end
 
 %% Define turbine geometry %%
