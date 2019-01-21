@@ -10,6 +10,7 @@ r = sim_input.r;
 TSR = sim_input.TSR;
 
 Z3 = data_geom.Z3;
+delta_z = data_geom.delta_z;
 
 if nz ~= 1 % 3D simulation %
     %% Get the velocity data from CFD, previous timestep %%
@@ -38,13 +39,22 @@ if nz ~= 1 % 3D simulation %
     
     if sim_input.om_calc == 1 % weighed average over plane power %
         omega = (TSR / r) * (sum(U_inf_zeta.^3) / sum(U_inf_zeta.^2));
-        
     elseif sim_input.om_calc == 2 % use Cp-TSR curve %
+        cfd2d_cp = [0.363; 0.387; 0.413; 0.421; 0.426; 0.42; 0.409; 0.395; 0.38; 0.366; 0.284];
+        cfd2d_tsr = [2.1; 2.2; 2.3; 2.35; 2.5; 2.625; 2.75; 2.875; 3; 3.1; 3.6];
+        p_teo =@(x) turb_pot_cfd2d(x,delta_z,r,U_inf_zeta,rho,cfd2d_cp,cfd2d_tsr); 
         
+        rpm_min = 1;
+        rpm_max = 100;
+        
+        [omega, ~, exitflag] = fminbnd(-p_teo,rpm_min*(2*pi/60),rpm_max*(2*pi/60)); % minus is to convert maximum problem into minimum problem %
+        
+        if exitflag ~= 1
+            error('Optimal omega could not be found.')
+        end
         
     else % normal average of TSR planes %
         omega = (TSR / r) * (nz / sum(1./U_inf_zeta));
-        
     end   
     
     TSR_plane = omega .* r ./ U_inf_zeta;
@@ -67,5 +77,15 @@ else % 2D simulation %
     
     vel = struct('U3',U3,'V3',V3,'U_inf',U_inf,'beta',beta,'omega',omega,'vel_u',vel_u,'vel_v',vel_v,'U_inf_zeta',U_inf_zeta,'beta_zeta',beta_zeta);
 end
+
+end
+
+function ptot = turb_pot_cfd2d(omega,delta_z,r,U_inf_zeta,rho,cfd2d_cp,cfd2d_tsr)
+    % Evaluates the turbine power by assuming a cfd 2d Cp on every turbine
+    % plane
+    tsr = omega.*r./U_inf_zeta;
+    cp_z = interp1(cfd2d_tsr,cfd2d_cp,tsr,'linear');
+    p_z = cp_z.*(1/2).*rho.*(2.*r.*delta_z).*U_inf_zeta.^3;
+    ptot = sum(p_z);
 
 end
