@@ -61,7 +61,7 @@ end
 data_geom = init_geom(sim_input);
 
 %% Define flow field %%
-data_vel = init_vel(sim_input, data_geom, vel_input);
+data_vel = init_vel(sim_input, sim_settings, data_geom, vel_input);
 
 %% Compile mex files %%
 if exist(['static_data_mex.' mexext],'file') ~= 3

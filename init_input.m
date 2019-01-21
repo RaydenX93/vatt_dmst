@@ -9,7 +9,8 @@ sim_settings.tip_losses = 1; % tip losses model (0: inactive, 1: Prandtl, 2: CFD
 sim_settings.virtual = 0; % flow curvature model (0: inactive, 1: deluca) %
 sim_settings.st_curvature = 2; % streamlines curvature model (0: inactive, 1: potential flow, 2: deluca, tuning) %
 sim_settings.st_expansion = 2; % stramtubes expansion model (0: inactive, 1: test, 2: deluca, tuning) %
-sim_settings.om_calc = 0; % omega calculation algorythm (0: normal average of TSR planes, 2: weighted average over plane power, 3: use Cp-TSR curve %
+sim_settings.om_calc = 1; % omega calculation algorythm (0: normal average of TSR planes, 1: weighted average over plane power, 2: use Cp-TSR curve %
+
 %% Turbine grid parameters %%
 nz = 51; % number of cells along vertical direction (better if it is odd number) %
 n_ring = 40; % number of cells along azimuthal direction (must be even number)%

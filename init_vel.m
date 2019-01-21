@@ -1,4 +1,4 @@
-function [vel] = init_vel(sim_input, data_geom, vel_input)
+function [vel] = init_vel(sim_input, sim_settings,data_geom, vel_input)
 % Parses flow data for DMST simulation
 
 %% Input read %%
@@ -8,6 +8,7 @@ H = sim_input.H;
 surf_dist = sim_input.surf_dist;
 r = sim_input.r;
 TSR = sim_input.TSR;
+rho = sim_input.rho;
 
 Z3 = data_geom.Z3;
 delta_z = data_geom.delta_z;
@@ -37,17 +38,18 @@ if nz ~= 1 % 3D simulation %
     %om_func = @(x) mean(x .* r ./ U_inf_zeta) - TSR;
     %omega = fzero(om_func,1);
     
-    if sim_input.om_calc == 1 % weighed average over plane power %
+    if sim_settings.om_calc == 1 % weighed average over plane power %
         omega = (TSR / r) * (sum(U_inf_zeta.^3) / sum(U_inf_zeta.^2));
-    elseif sim_input.om_calc == 2 % use Cp-TSR curve %
+    elseif sim_settings.om_calc == 2 % use Cp-TSR curve %
+        disp('Optimizing omega value...')
         cfd2d_cp = [0.363; 0.387; 0.413; 0.421; 0.426; 0.42; 0.409; 0.395; 0.38; 0.366; 0.284];
         cfd2d_tsr = [2.1; 2.2; 2.3; 2.35; 2.5; 2.625; 2.75; 2.875; 3; 3.1; 3.6];
-        p_teo =@(x) turb_pot_cfd2d(x,delta_z,r,U_inf_zeta,rho,cfd2d_cp,cfd2d_tsr); 
+        p_teo =@(x) -1*turb_pot_cfd2d(x,delta_z,r,U_inf_zeta,rho,cfd2d_cp,cfd2d_tsr); % minus is to convert maximum problem into minimum problem %
         
         rpm_min = 1;
-        rpm_max = 100;
+        rpm_max = 10;
         
-        [omega, ~, exitflag] = fminbnd(-p_teo,rpm_min*(2*pi/60),rpm_max*(2*pi/60)); % minus is to convert maximum problem into minimum problem %
+        [omega, ~, exitflag] = fminbnd(p_teo,rpm_min*(2*pi/60),rpm_max*(2*pi/60));
         
         if exitflag ~= 1
             error('Optimal omega could not be found.')
