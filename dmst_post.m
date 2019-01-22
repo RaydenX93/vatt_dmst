@@ -10,6 +10,8 @@ R3 = out_geom_data(:,:,1);
 modW = out_geom_data(:,:,6);
 sinAl = out_geom_data(:,:,8);
 cosAl = out_geom_data(:,:,9);
+sinTh = out_geom_data(:,:,3);
+cosTh = out_geom_data(:,:,2);
 delta_z = out_geom_data(:,:,12);
 v_alpha = out_geom_data(:,:,11);
 alpha = out_geom_data(:,:,10);
@@ -38,6 +40,11 @@ U_inf_zeta_mod(U_inf_zeta_picc) = 0.1;
 %% Force evaluation %%
 L = cl .* 0.5 .* rho .* c .* delta_z .* modW.^2;
 D = cd .* 0.5 .* rho .* c .* delta_z .* modW.^2;
+
+ct = cl.*sinAl - cd.*cosAl;
+cn = cl.*cosAl + cd.*sinAl;
+
+cx = -(ct.*cosTh - cn.*sinTh);
 
 %% Correzione P piccole %%
 %  P_picc = abs(P) < 1e-1;
@@ -157,6 +164,7 @@ post_data=struct( ...
     'P',P, ...
     'P_plane0',P_plane0, ...
     'P_tot',P_tot, ...
+    'cx',cx, ...
     'upwind_p',upwind_p, ...
     'upwind_cp',upwind_cp, ...
     'upwind_a',upwind_a, ...

@@ -12,7 +12,7 @@ clc
 %depth = [0 -6 -13];
 %vel_x = [0 0.25 1];
 depth = linspace(0,-15);
-vel_x = (depth.^2)/(1.25*100);
+vel_x = 0.5+(depth.^2)/(1.25*100);
 %depth = [0 -15];
 %vel_x = [1.75 1.75];
 vel_input = [depth', vel_x'];

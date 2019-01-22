@@ -31,6 +31,10 @@ if nz ~= 1 % 3D simulation %
     %% Evaluate U_inf and beta for each plane
     [U_inf_zeta, beta_zeta] = beta_calc(U3(:,1),V3(:,1));
     
+    if min(U_inf_zeta) < 0.5
+       error('The undisturbed flow velocity must be at least 0.5 m/s at every z position'); 
+    end
+    
     %% Evaluate undisturbed flow vel and omega %%
     U_inf = trapz(Z3(:,1),U_inf_zeta)/(max(Z3(:,1))-min(Z3(:,1)));
     [U_inf_fis, beta_fis] = infty_vel(Z3(:,1),U3(:,1),V3(:,1));
