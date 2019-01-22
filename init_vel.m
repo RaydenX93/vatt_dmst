@@ -13,6 +13,10 @@ rho = sim_input.rho;
 Z3 = data_geom.Z3;
 delta_z = data_geom.delta_z;
 
+% Minimum and maximum allowed omega in RPM %
+rpm_min = 0.1;
+rpm_max = 20;
+
 if nz ~= 1 % 3D simulation %
     %% Get the velocity data from CFD, previous timestep %%
     dep_data = vel_input(:,1);
@@ -46,9 +50,6 @@ if nz ~= 1 % 3D simulation %
         cfd2d_tsr = [2.1; 2.2; 2.3; 2.35; 2.5; 2.625; 2.75; 2.875; 3; 3.1; 3.6];
         p_teo =@(x) -1*turb_pot_cfd2d(x,delta_z,r,U_inf_zeta,rho,cfd2d_cp,cfd2d_tsr); % minus is to convert maximum problem into minimum problem %
         
-        rpm_min = 1;
-        rpm_max = 10;
-        
         [omega, ~, exitflag] = fminbnd(p_teo,rpm_min*(2*pi/60),rpm_max*(2*pi/60));
         
         if exitflag ~= 1
@@ -57,7 +58,13 @@ if nz ~= 1 % 3D simulation %
         
     else % normal average of TSR planes %
         omega = (TSR / r) * (nz / sum(1./U_inf_zeta));
-    end   
+    end
+    
+    % Check maximum omega %
+    if omega*60/(2*pi) > rpm_max
+       warning(['Turbine omega too high! Setting ' num2str(rpm_max) ' RPM...']) 
+       omega = rpm_max*(2*pi)/60;
+    end
     
     TSR_plane = omega .* r ./ U_inf_zeta;
     
@@ -83,11 +90,11 @@ end
 end
 
 function ptot = turb_pot_cfd2d(omega,delta_z,r,U_inf_zeta,rho,cfd2d_cp,cfd2d_tsr)
-    % Evaluates the turbine power by assuming a cfd 2d Cp on every turbine
-    % plane
-    tsr = omega.*r./U_inf_zeta;
-    cp_z = interp1(cfd2d_tsr,cfd2d_cp,tsr,'linear');
-    p_z = cp_z.*(1/2).*rho.*(2.*r.*delta_z).*U_inf_zeta.^3;
-    ptot = sum(p_z);
+% Evaluates the turbine power by assuming a cfd 2d Cp on every turbine
+% plane
+tsr = omega.*r./U_inf_zeta;
+cp_z = interp1(cfd2d_tsr,cfd2d_cp,tsr,'linear');
+p_z = cp_z.*(1/2).*rho.*(2.*r.*delta_z).*U_inf_zeta.^3;
+ptot = sum(p_z);
 
 end
