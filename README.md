@@ -113,15 +113,15 @@ ___
 </tr>  
 <tr>  
 	<td>1</td>  
-	<td>Fattore di induzione assiale non corretto</td>  
-	<td>a</td>  
+	<td><i>R</i></td>  
+	<td>Raggio</td>  
 	<td>9</td>
 	<td>a</td>
 	<td>a</td>
 </tr>  
 <tr>  
 	<td>2</td>  
-	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
+	<td>cos(</td>  
 	<td>a</td>  
 	<td>10</td>
 	<td>a</td>
@@ -155,7 +155,7 @@ ___
 	<td>6</td>  
 	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
 	<td>6</td>  
-	<td>CL senza perdita alle punte</td>
+	<td>14</td>
 	<td>a</td>
 	<td>a</td>
 </tr>  
@@ -163,7 +163,7 @@ ___
 	<td>7</td>  
 	<td>CL con perdita alle punte</td>  
 	<td>7</td>  
-	<td>CD senza perdita alle punte</td>
+	<td>15</td>
 	<td>a</td>
 	<td>a</td>
 </tr>
@@ -171,7 +171,7 @@ ___
 	<td>8</td>  
 	<td>CD con perdita alle punte</td>  
 	<td>8</td>  
-	<td>Fattore di induzione assiale dopo correzione espansione streamtubes</td>
+	<td>16</td>
 	<td>a</td>
 	<td>a</td>
 </tr>
@@ -180,6 +180,6 @@ ___
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1MTQzNDAxLDIwNjU0NzE3MzMsLTQ5MD
+eyJoaXN0b3J5IjpbNjY4OTExMDA2LDIwNjU0NzE3MzMsLTQ5MD
 I2NTM5MF19
 -->
