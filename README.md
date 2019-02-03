@@ -55,7 +55,6 @@ In questo paragrafo verranno investigati i singoli script, di cui verranno spieg
 Questo file è la function da cui lanciare le simulazioni.
 `[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, [output_file], [tsr_override]);`
 
-
 |Nome Output|Tipo  | Descrizione |
 |-|-|-|
 |`data_post`  | Struttura | Contiene vettori utili per l’output |
@@ -75,6 +74,6 @@ Questo file è la function da cui lanciare le simulazioni.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTk5MTI2MywyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbNjcxNzM1OTUxLDIwNjU0NzE3MzMsLTQ5MD
+I2NTM5MF19
 -->
