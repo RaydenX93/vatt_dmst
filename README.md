@@ -23,7 +23,6 @@ Successivamente bisogna installare:
  - MATLAB Support for MinGW-w64 C/C++ Compiler ([Link](https://it.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler))
 
 L’uso di versioni diverse non è stato testato.
-<![endif]-->
 
 ## Come lanciare una simulazione normale
 
@@ -32,8 +31,6 @@ Questo paragrafo è volutamente discorsivo. Si rimanda all’analisi dei singoli
  1. Aprire il file _init_input.m_ e definire le opzioni della simulazione.
  2. Lanciare la funzione _dmst_vatt.m_ specificando il profilo di velocità da usare, per simulazioni 3D, oppure semplicemente il valore di velocità del flusso, per simulazioni 2D. Facoltativamente, definire il nome del file di output.
  3. Realizzare i plot desiderati usando i dati di output.
-
-<![endif]-->
 
 ## Come lanciare una simulazione con i dati MIT
 
@@ -68,12 +65,15 @@ Questo file è la function da cui lanciare le simulazioni.
 ___
 |Nome Input|Tipo  | Descrizione |
 |-|-|-|
-|`vel_input`  | Matrice/Scalare | Contiene informazioni sul flusso indisturbato.  <ul><li>_Simulazioni 2D_<br>Scalare della velocità.</li><li> _Simulazioni 3D_<br>Matrice di 2 colonne.<br>La prima indica le posizioni z a cui la velocità viene misurata da 0 (pelo libero del mare) a -∞ (fondale). La seconda, il valore di velocità. |</li></ul>
+|`vel_input`  | Matrice/Scalare | Contiene informazioni sul flusso indisturbato.<ul><li>_Simulazioni 2D_<br>Scalare della velocità.</li><li> _Simulazioni 3D_<br>Matrice di 2 colonne.<br>La prima indica le posizioni z a cui la velocità viene misurata da 0 (pelo libero del mare) a -∞ (fondale). La seconda, il valore di velocità. |</li></ul>
 |`output_file`  | Struttura | *Opzionale*. Indica il file di output dove salvare le simulazioni. Se non fornito, viene generato un nome dal programma. |
 |`tsr_override`  | Struttura | *Opzionale*. Imposta un TSR diverso da quello specificato in `init_input.m` |
 
+Per un esempio su come avviare una simulazione, fare riferimento allo script _ESEMPIO_lanciasim_singola.m_ e *ESEMPIO_dmst_optimizer.m*
+
+I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. In caso di dubbio, risalire dal codice sorgente alla grandezza calcolata.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2MzQ3MjU1LDIwNjU0NzE3MzMsLTQ5MD
+eyJoaXN0b3J5IjpbNzIwMTQzOTg4LDIwNjU0NzE3MzMsLTQ5MD
 I2NTM5MF19
 -->
