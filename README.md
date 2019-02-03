@@ -295,30 +295,19 @@ Per i restanti input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmst
 ## Future work
 Segue una lista di possibili spunti per il miglioramento del codice, in ordine di crescente difficoltà di implementazione (circa), con relativi commenti.
 
-1. **Cambiare il database di dati di riferimento per profili in accordo con ([Link](https://www.sciencedirect.com/science/article/pii/S1364032114005784))**
+1. **Cambiare il database di dati di riferimento per profili in accordo con ([Link](https://www.sciencedirect.com/science/article/pii/S1364032114005784))**<br>Bisogna valutare se effettivamente ne valga la pena, ma è molto semplice da fare, bisogna solo modificare _static_data.m_ e il sorgente della routine di stallo dinamico con i nuovi valori.
 
-Bisogna valutare se effettivamente ne valga la pena, ma è molto semplice da fare, bisogna solo modificare _static_data.m_ e il sorgente della routine di stallo dinamico con i nuovi valori.
-
-2. **Raffinare modello di curvatura di streamlines**
-
+2. **Raffinare modello di curvatura di streamlines**<br>
 Si consiglia di effettuare nuove simulazioni CFD 2D con vario numero di pale, TSR, ecc. In ognuna bisognerà impostare un report per ogni timestep della quantità _Velocity Angle_ su una circonferenza centrata nell’origine (dov’è il centro della turbina) di raggio pari al raggio nominale della turbina. Ogni report dovrà essere mediato nel tempo (per usare valori del velocity angle privi di fluttuazioni). L’idea è ricavare un database di velocity angle al variare di posizione azimutale, TSR e numero di pale ed eventualmente altro. Successivamente il fattore dovrà essere ricavato da una interpolazione lineare in più dimensioni (ispirarsi al modello di perdite alle punte nuovo).
 
-3. **Raffinare modello di espansione degli streamtube**
+3. **Raffinare modello di espansione degli streamtube**<br>Migliorare la giustificazione fisica del modello corrente o trovarne uno nuovo. Sicuramente migliorare il fitting effettuato sul modello attuale.
 
-Migliorare la giustificazione fisica del modello corrente o trovarne uno nuovo. Sicuramente migliorare il fitting effettuato sul modello attuale.
+4. **Passare ad una discretizzazione verticale non più uniforme, con infittimento verso le punte.**<br>Potrebbe essere piuttosto ostico, soprattutto perché bisognerebbe cambiare molte formule in giro per il codice.
 
-4. **Passare ad una discretizzazione verticale non più uniforme, con infittimento verso le punte.**
+5. **Implementare effetti di curvatura del flusso.**<br>Bisogna prima capire perché il modello presente non funziona per codici DMST ma va bene per UDF su Fluent. Se non dovesse andar bene, va reimplementato in altro modo.
 
-Potrebbe essere piuttosto ostico, soprattutto perché bisognerebbe cambiare molte formule in giro per il codice.
-
-5. **Implementare effetti di curvatura del flusso.**
-
-Bisogna prima capire perché il modello presente non funziona per codici DMST ma va bene per UDF su Fluent. Se non dovesse andar bene, va reimplementato in altro modo.
-
-6. **Migliorare modello di perdite alle punte**
-
-Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
+7. **Migliorare modello di perdite alle punte**<br>Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2MDgyODM2LC0xMTY4MTQ4MjAzLC0xNT
+eyJoaXN0b3J5IjpbMTkzMjA5Nzk3LC0xMTY4MTQ4MjAzLC0xNT
 Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
 -->
