@@ -116,7 +116,7 @@ ___
 	<td><i>R</i></td>  
 	<td>Raggio</td>  
 	<td>9</td>
-	<td>a</td>
+	<td><i>cos(α)</i></td>
 	<td>a</td>
 </tr>  
 <tr>  
@@ -124,7 +124,7 @@ ___
 	<td><i>cos(θ)</i></td>  
 	<td>Coseno pos. azimutale</td>  
 	<td>10</td>
-	<td>a</td>
+	<td><i>α</i> [deg]</td>
 	<td>a</td>
 </tr>  
 <tr>
@@ -132,7 +132,7 @@ ___
 	<td><i>sin(θ)</i></td>  
 	<td></td>  
 	<td>11</td>
-	<td>a</td>
+	<td><i>α)</i></td>
 	<td>a</td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ ___
 </tr>  
 <tr>  
 	<td>6</td>  
-	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
+	<td><i>ModW</i></td>  
 	<td>6</td>  
 	<td>14</td>
 	<td>a</td>
@@ -161,7 +161,7 @@ ___
 </tr>  
 <tr>
 	<td>7</td>  
-	<td>CL con perdita alle punte</td>  
+	<td><i>Re<sub>c</sub></i></td>  
 	<td>7</td>  
 	<td>15</td>
 	<td>a</td>
@@ -169,7 +169,7 @@ ___
 </tr>
 <tr>
 	<td>8</td>  
-	<td>CD con perdita alle punte</td>  
+	<td><i>sin(α)</i></td>  
 	<td>8</td>  
 	<td>16</td>
 	<td>a</td>
@@ -180,6 +180,6 @@ ___
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTIxMjM1MSwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbMTY3OTQ3MDAyMCwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
