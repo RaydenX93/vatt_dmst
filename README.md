@@ -55,18 +55,19 @@ In questo paragrafo verranno investigati i singoli script, di cui verranno spieg
 Questo file è la function da cui lanciare le simulazioni.
 `[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, [output_file], [tsr_override]);`
 
-|Nome  |Tipo  | Descrizione |
-|--|--|--|
-|`data_post`  | Struttura | Contiene vettori utili per l’output|
-|`data_geom`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore|
-|`data_vel`  | Struttura | Contiene grandezze relative al flusso in ingresso|
-|`data_out_geom`  | Matrice| Contiene grandezze relative alla geometria del rotore e del flusso calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 16|
-|`data_out`  | Matrice| Contiene grandezze di output calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 8|
-|`data_dyn`  | Matrice| <![endif]--> Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz*n_ring*8|
-|`sim_input`  | Struttura | prova2|
-|`sim_settings`  | Struttura| prova2|
+
+|Nome Output|Tipo  | Descrizione |
+|-|-|-|
+|`data_post`  | Struttura | Contiene vettori utili per l’output |
+|`data_geom`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore |
+|`data_vel`  | Struttura | Contiene grandezze relative al flusso in ingresso |
+|`data_out_geom`  | Matrice| Contiene grandezze relative alla geometria del rotore e del flusso calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 16 |
+|`data_out`  | Matrice| Contiene grandezze di output calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 8 |
+|`data_dyn`  | Matrice| Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz **X** n_ring **X** 8 |
+|`sim_input`  | Struttura | Contiene impostazioni della simulazione |
+|`sim_settings`  | Struttura| Contiene informazioni sui sottomodelli attivi |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzY0MjYyMDcsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbLTEwNDk2Njk5MjYsLTQ5MDI2NTM5MF19
 -->
