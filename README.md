@@ -12,12 +12,12 @@ Si consiglia di leggere il manuale nella sua interezza prima di effettuare simul
 - [Come lanciare una simulazione normale](#come-lanciare-una-simulazione-normale)
 - [Come lanciare una simulazione con i dati MIT](#Come-lanciare-una-simulazione-con-i-dati-MIT)
 - [Struttura dei file](#Struttura-dei-file)
--- [`vatt_dmst.m`](#vatt_dmstm)
--- [`init_input.m`](#init_inputm)
--- [`init_geom.m`](#init_inputm)
--- [`init_vel.m`](#init_inputm)
--- [`dmst_update.m`](#init_inputm)
--- [`dmst_par_loop.m`](#init_inputm)
+ - [`vatt_dmst.m`](#vatt_dmstm)
+ - [`init_input.m`](#init_inputm)
+ - [`init_geom.m`](#init_inputm)
+ - [`init_vel.m`](#init_inputm)
+ - [`dmst_update.m`](#init_inputm)
+[`dmst_par_loop.m`](#init_inputm)
 -- [`dmst_calc.m`](#init_inputm)
 -- [`dmst_post.m`](#init_inputm)
 -- [`dmst_plot_update.m`](#dmst_plot_updatem)
@@ -300,6 +300,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc0NjU0ODQ1LC0xMTY4MTQ4MjAzLC0xNT
+eyJoaXN0b3J5IjpbNTM0NTA4NDk2LC0xMTY4MTQ4MjAzLC0xNT
 Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
 -->
