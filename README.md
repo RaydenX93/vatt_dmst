@@ -76,10 +76,12 @@ I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. I
 Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cella in posizione azimutale _i_, variabile fra 1 (piano di turbina più in basso) e *n_ring*, e posizione verticale _k_, variabile fra 1 e *nz*.
 
 `data_out(k,i,x)`
-|1||5||
-|2||6||
-|3||7|
-|4||8|
+|a|b|c|d|
+|-|-|-|-|
+|1|a|5|a|
+|2|a|6|a|
+|3|a|7|a|
+|4|a|8|a|
 
 
 1. Fattore di induzione assiale non corretto
@@ -94,6 +96,6 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDgyNTQyMCwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbLTI1MjU5Njk3MCwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
