@@ -65,15 +65,15 @@ Questo file è la function da cui lanciare le simulazioni.
 |`data_dyn`  | Matrice | Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz **X** n_ring **X** 8 |
 |`sim_input`  | Struttura | Contiene impostazioni della simulazione |
 |`sim_settings`  | Struttura| Contiene informazioni sui sottomodelli attivi |
-
+___
 |Nome Input|Tipo  | Descrizione |
 |-|-|-|
 |`vel_input`  | Matrice/Scalare | Contiene informazioni sul flusso indisturbato.  <ul><li>_Simulazioni 2D_<br>Scalare della velocità.</li><li> _Simulazioni 3D_<br>Matrice di 2 colonne.<br>La prima indica le posizioni z a cui la velocità viene misurata da 0 (pelo libero del mare) a -∞ (fondale). La seconda, il valore di velocità. |</li></ul>
-|`output_file`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore |
-|`tsr_override`  | Struttura | Contiene grandezze relative al flusso in ingresso |
+|`output_file`  | Struttura | *Opzionale*. Indica il file di output dove salvare le simulazioni. Se non fornito, viene generato un nome dal programma. |
+|`tsr_override`  | Struttura | *Opzionale*. Imposta un TSR diverso da quello specificato in `init_input.m` |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxNzM1OTUxLDIwNjU0NzE3MzMsLTQ5MD
+eyJoaXN0b3J5IjpbMjE2MzQ3MjU1LDIwNjU0NzE3MzMsLTQ5MD
 I2NTM5MF19
 -->
