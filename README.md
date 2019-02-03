@@ -75,7 +75,31 @@ I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. I
 
 Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cella in posizione azimutale _i_, variabile fra 1 (piano di turbina più in basso) e *n_ring*, e posizione verticale _k_, variabile fra 1 e *nz*.
 
-`data_out(k,i,x)`
+<table>  
+<tr>  
+	<th>`data_out(k,i,x)`</th>    
+</tr>  
+<tr>  
+	<td>1</td>  
+	<td>a</td>  
+	<td>5</td>  
+	<td>a</td>
+</tr>  
+<tr>  
+	<td>1</td>  
+	<td>a</td>  
+	<td>5</td>  
+	<td>a</td>
+</tr>  
+<tr>
+	<td>1</td>  
+	<td>a</td>  
+	<td>5</td>  
+	<td>a</td>
+</tr>
+</table>
+
+
 |a|b|c|d|
 |-|-|-|-|
 |1|a|5|a|
@@ -96,6 +120,6 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MjU5Njk3MCwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbMTAwMjA5MzQ1NCwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
