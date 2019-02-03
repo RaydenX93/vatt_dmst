@@ -25,15 +25,33 @@ Successivamente bisogna installare:
 L’uso di versioni diverse non è stato testato.
 <![endif]-->
 
-# Come lanciare una simulazione normale
+## Come lanciare una simulazione normale
 
 Questo paragrafo è volutamente discorsivo. Si rimanda all’analisi dei singoli file per informazioni sulla sintassi degli script.
 
-<![if !supportLists]>1. <![endif]>Aprire il file _init_input.m_ e definire le opzioni della simulazione.
+ 1. Aprire il file _init_input.m_ e definire le opzioni della simulazione.
+ 2. Lanciare la funzione _dmst_vatt.m_ specificando il profilo di velocità da usare, per simulazioni 3D, oppure semplicemente il valore di velocità del flusso, per simulazioni 2D. Facoltativamente, definire il nome del file di output.
+ 3. Realizzare i plot desiderati usando i dati di output.
 
-<![if !supportLists]>2. <![endif]>Lanciare la funzione _dmst_vatt.m_ specificando il profilo di velocità da usare, per simulazioni 3D, oppure semplicemente il valore di velocità del flusso, per simulazioni 2D. Facoltativamente, definire il nome del file di output.
+<![endif]-->
 
-<![if !supportLists]>3. <![endif]>Realizzare i plot desiderati usando i dati di output.
+## Come lanciare una simulazione con i dati MIT
+
+Al momento sono disponibili due set di dati posizionati in due cartelle.
+- Hz600mN010mw (griglia con risoluzione 600 m)
+- Hz200mN010mw (griglia con risoluzione 200 m)
+
+Il file con i dati è _out.nc_.
+
+<![if !supportLists]>1. <![endif]>Per preparare i dati alla simulazione DMST, avviare lo script _MIT_read_nc_data.m_ modificando la variabile pe_file al suo interno con il percorso al file .nc desiderato. Verrà prodotto, insieme ad altri file, il file _%nome_file%_processed.mat._
+
+<![if !supportLists]>2. <![endif]>Per avviare la simulazione MIT, aprire lo script MIT_run_simulation.m e modificare la variabile nome_file con il file _%nome_file%_processed.mat_ creato precedentemente (senza estensione).
+
+<![if !supportLists]>3. <![endif]>Modificare la variabile sim_step per impostare la risoluzione desiderata.
+
+<![if !supportLists]>4. <![endif]>Avviare lo script.
+
+<![if !supportLists]>5. <![endif]>I risultati complessivi sono salvati in _%nome_file%_sub_finished.mat._ Sono anche presenti i file delle singole simulazioni in una sottocartella.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwNjkyNTExXX0=
+eyJoaXN0b3J5IjpbLTE2MTIzNzcyMDhdfQ==
 -->
