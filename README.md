@@ -105,6 +105,8 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 </tr>
 </table>
 
+___
+
 <table>  
 <tr>  
 	<code>data_out_geom(k,i,x)</code>
@@ -138,6 +140,6 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTU1MzY1LDIwNjU0NzE3MzMsLTQ5MD
+eyJoaXN0b3J5IjpbOTc3MTg2NTgyLDIwNjU0NzE3MzMsLTQ5MD
 I2NTM5MF19
 -->
