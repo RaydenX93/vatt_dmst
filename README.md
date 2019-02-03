@@ -47,6 +47,9 @@ Il file con i dati è *out.<span></span>nc*.
 3. Modificare la variabile sim_step per impostare la risoluzione desiderata.
 4. Avviare lo script.
 5. I risultati complessivi sono salvati in *%nome_file%_sub_finished.mat*. Sono anche presenti i file delle singole simulazioni in una sottocartella.
+
+## Struttura dei file
+In questo paragrafo verranno investigati i singoli script, di cui verranno spiegati i rispettivi input e output. Non si entrerà nei meriti del codice in maniera troppo tecnica in quanto gli script sono sufficientemente commentati. Per informazioni sugli script nella cartella _func_, data la loro natura molto specifica, si consiglia di leggere direttamente il codice sorgente.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzMwMTkzOSwtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbLTEzNTgzNTE0MTUsLTQ5MDI2NTM5MF19
 -->
