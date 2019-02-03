@@ -74,9 +74,17 @@ Per un esempio su come avviare una simulazione, fare riferimento allo script *ES
 I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. In caso di dubbio, risalire dal codice sorgente alla grandezza calcolata.
 
 Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cella in posizione azimutale _i_, variabile fra 1 (piano di turbina più in basso) e *n_ring*, e posizione verticale _k_, variabile fra 1 e *nz*.
+`data_out(k,i,x)`
+1. Fattore di induzione assiale non corretto
+2. Fattore di induzione assiale a monte, se la cella è in downstream
+3. CL con perdita alle punte
+4. CD con perdita alle punte
+5. Fattore di perdita alle punte
+6. CL 
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MjA0ODQyMCwyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbNjg2NDgxOTMzLDIwNjU0NzE3MzMsLTQ5MD
+I2NTM5MF19
 -->
