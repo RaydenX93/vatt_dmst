@@ -50,6 +50,9 @@ Il file con i dati è *out.<span></span>nc*.
 
 ## Struttura dei file
 In questo paragrafo verranno investigati i singoli script, di cui verranno spiegati i rispettivi input e output. Non si entrerà nei meriti del codice in maniera troppo tecnica in quanto gli script sono sufficientemente commentati. Per informazioni sugli script nella cartella _func_, data la loro natura molto specifica, si consiglia di leggere direttamente il codice sorgente.
+
+### `vatt_dmst.m`
+Questo file è la function da cui lanciare le simulazioni.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTgzNTE0MTUsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbLTI4NjMyMjE4NywtNDkwMjY1MzkwXX0=
 -->
