@@ -70,18 +70,17 @@ Questo file è la function da cui lanciare le simulazioni.
 |Nome Input|Tipo  | Descrizione |
 |-|-|-|
 |`vel_input`  | Matrice/Scalare | Contiene informazioni sul flusso indisturbato.
-- _Simulazioni 2D_
+ _Simulazioni 2D_
 Scalare della velocità.
 
-<![if !supportLists]>· <![endif]>_Simulazioni 3D_
-
+ _Simulazioni 3D_
 Matrice di 2 colonne.
-
 La prima indica le posizioni z a cui la velocità viene misurata da 0 (pelo libero del mare) a <![if !msEquation]>  <![endif]> (fondale). La seconda, il valore di velocità. |
+
 |`output_file`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore |
 |`tsr_override`  | Struttura | Contiene grandezze relative al flusso in ingresso |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2ODI2MDE3LC00OTAyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
 -->
