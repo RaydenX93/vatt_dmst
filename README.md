@@ -9,8 +9,11 @@ Si consiglia di leggere il manuale nella sua interezza prima di effettuare simul
 
 ## Indice
 [Prerequisiti](#prerequisiti)
-[Come lanciare una simulazione normale](#Come lanciare una simulazione normale)
-
+[Come lanciare una simulazione normale](#come-lanciare-una-simulazione-normale)
+Come lanciare una simulazione con i dati MIT
+Struttura dei file
+`vatt_dmst.m`
+`init_input.m`
 
 ## Prerequisiti
 Il programma è stato sviluppato e testato su sistema operativo **Windows 10 (64 bit)**. L’uso su altre piattaforme potrebbe richiedere modifiche al codice.
@@ -289,6 +292,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjUxODM0OTMsLTExNjgxNDgyMDMsLT
-E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbLTY3OTI1NTI1NCwtMTE2ODE0ODIwMywtMT
+U0NDE0MDEyMSwyMDY1NDcxNzMzLC00OTAyNjUzOTBdfQ==
 -->
