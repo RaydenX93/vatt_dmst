@@ -121,15 +121,15 @@ ___
 </tr>  
 <tr>  
 	<td>2</td>  
-	<td>cos(</td>  
-	<td>a</td>  
+	<td><i>cos(θ)</i></td>  
+	<td>Coseno pos. azimutale</td>  
 	<td>10</td>
 	<td>a</td>
 	<td>a</td>
 </tr>  
 <tr>
 	<td>3</td>  
-	<td>CL con perdita alle punte</td>  
+	<td><i>sin(θ)</i></td>  
 	<td></td>  
 	<td>11</td>
 	<td>a</td>
@@ -137,7 +137,7 @@ ___
 </tr>
 <tr>
 	<td>4</td>  
-	<td>CD con perdita alle punte</td>  
+	<td><i>W<sub>0</sub></i></td>  
 	<td>a</td>  
 	<td>12</td>
 	<td>a</td>
@@ -145,7 +145,7 @@ ___
 </tr>
 <tr>  
 	<td>5</td>  
-	<td>Fattore di induzione assiale non corretto</td>  
+	<td><i>W<sub>1</sub></i></td>  
 	<td>5</td>  
 	<td>13</td>
 	<td>a</td>
@@ -180,6 +180,6 @@ ___
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4OTExMDA2LDIwNjU0NzE3MzMsLTQ5MD
-I2NTM5MF19
+eyJoaXN0b3J5IjpbLTcxNTIxMjM1MSwyMDY1NDcxNzMzLC00OT
+AyNjUzOTBdfQ==
 -->
