@@ -306,8 +306,8 @@ Si consiglia di effettuare nuove simulazioni CFD 2D con vario numero di pale, TS
 
 5. **Implementare effetti di curvatura del flusso.**<br>Bisogna prima capire perché il modello presente non funziona per codici DMST ma va bene per UDF su Fluent. Se non dovesse andar bene, va reimplementato in altro modo.
 
-7. **Migliorare modello di perdite alle punte**<br>Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
+6. **Migliorare modello di perdite alle punte**<br>Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjA5Nzk3LC0xMTY4MTQ4MjAzLC0xNT
-Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbLTIwOTk0NDYxNzAsLTExNjgxNDgyMDMsLT
+E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
 -->
