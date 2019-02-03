@@ -77,24 +77,30 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 
 <table>  
 <tr>  
-	<th>`data_out(k,i,x)`</th>    
+	<th> <code>`data_out(k,i,x)` </code></th>    
 </tr>  
 <tr>  
 	<td>1</td>  
-	<td>a</td>  
+	<td>Fattore di induzione assiale non corretto</td>  
 	<td>5</td>  
 	<td>a</td>
 </tr>  
 <tr>  
-	<td>1</td>  
-	<td>a</td>  
-	<td>5</td>  
+	<td>2</td>  
+	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
+	<td>6</td>  
 	<td>a</td>
 </tr>  
 <tr>
-	<td>1</td>  
-	<td>a</td>  
-	<td>5</td>  
+	<td>3</td>  
+	<td>CL con perdita alle punte</td>  
+	<td>7</td>  
+	<td>a</td>
+</tr>
+<tr>
+	<td>4</td>  
+	<td>CD con perdita alle punte</td>  
+	<td>8</td>  
 	<td>a</td>
 </tr>
 </table>
@@ -108,10 +114,10 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 |4|a|8|a|
 
 
-1. Fattore di induzione assiale non corretto
-2. Fattore di induzione assiale a monte, se la cella è in downstream
-3. CL con perdita alle punte
-4. CD con perdita alle punte
+1. 
+2. 
+3. 
+4. 
 5. Fattore di perdita alle punte
 6. CL senza perdita alle punte
 7. CD senza perdita alle punte
@@ -120,6 +126,6 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMjA5MzQ1NCwyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbLTE5NjAzNDIwNTAsMjA2NTQ3MTczMywtND
+kwMjY1MzkwXX0=
 -->
