@@ -184,7 +184,17 @@ La definizione della matrice `data_dyn(k,i,x)` dipende dal tipo di modello di st
 Questo file è lo script che definisce le impostazioni della simulazione a livello di geometria di turbina, tipo di flusso, discretizzazione del rotore, ecc. Seguire i commenti nel file per configurare la simulazione come si desidera.
 **Sintassi**
 `[sim_settings, sim_input] = init_input`
+
+Per gli output si rimanda al paragrafo _vatt_dmst.m_.
+
+### `init_geom.m`
+Questo file si occupa di realizzare la discretizzazione spaziale del rotore in nz*n_ring celle.
+
+**Sintassi**
+`[data_geom] = init_geom(sim_input)`
+
+Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDkwMTM3MzQsMjA2NTQ3MTczMywtND
-kwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbLTY4Njc4MDg4MCwyMDY1NDcxNzMzLC00OT
+AyNjUzOTBdfQ==
 -->
