@@ -211,15 +211,17 @@ Questo file gestisce la singola iterazione del solutore DMST. Nello specifico, s
 Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 
 Si sottolinea che la variabile interna `dyn_input` è dichiarata come variabile di tipo *persistent* e pertanto continua ad esistere fra le varie chiamate di _dmst_update.m._
-<![endif]-->
 
-### dmst_par_loop.m
+### `dmst_par_loop.m`
 
 Questo file gestisce la soluzione del singolo piano di turbina. Viene risolta prima la parte upstream, trovando il fattore di induzione che fa tornare i bilanci per ogni cella azimutale della prima metà di turbina, poi c’è l’eventuale correzione di espansione dei tubi di flusso e successivamente viene risolto il downstream.
 
-#### Sintassi
+**Sintassi**
+`[geom_out_data, out_data, dyn_data] = dmst_par_loop(sim_settings, sim_input, dmst_input)`
 
-[geom_out_data, out_data, dyn_data] = dmst_par_loop(sim_settings, sim_input, dmst_input)
+|Nome Input|Tipo  | Descrizione |
+|-|-|-|
+|`dmst_input`  | Struttura | Contiene informazioni sul singolo piano da risolvere|
 
 **Input**
 
@@ -237,6 +239,6 @@ Struttura che contiene informazioni sul singolo piano da risolvere
 
 Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MDg0MzkxMiwyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbNTIyMTUxMTc3LDIwNjU0NzE3MzMsLTQ5MD
+I2NTM5MF19
 -->
