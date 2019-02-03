@@ -130,7 +130,7 @@ ___
 <tr>
 	<td>3</td>  
 	<td><i>sin(θ)</i></td>  
-	<td></td>  
+	<td>Seno pos. azimutale</td>  
 	<td>11</td>
 	<td><i>α<sub>virt</sub></i></td>
 	<td>a</td>
@@ -138,7 +138,7 @@ ___
 <tr>
 	<td>4</td>  
 	<td><i>W<sub>0</sub></i></td>  
-	<td>a</td>  
+	<td> Componente orizzontale (parallela flusso) di vel. relativa</td>  
 	<td>12</td>
 	<td><i>Δz</i></td>
 	<td>a</td>
@@ -156,7 +156,7 @@ ___
 	<td><i>ModW</i></td>  
 	<td>6</td>  
 	<td>14</td>
-	<td>a</td>
+	<td><i>TSR<sub>loc</sub></i></td>
 	<td>a</td>
 </tr>  
 <tr>
@@ -164,7 +164,7 @@ ___
 	<td><i>Re<sub>c</sub></i></td>  
 	<td>7</td>  
 	<td>15</td>
-	<td>a</td>
+	<td><i>U</i></td>
 	<td>a</td>
 </tr>
 <tr>
@@ -172,13 +172,13 @@ ___
 	<td><i>sin(α)</i></td>  
 	<td>8</td>  
 	<td>16</td>
-	<td>a</td>
+	<td><i>V</i></td>
 	<td>a</td>
 </tr>
 </table>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNTU3MDgxNCwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbMTIzNTE1MjE0MywyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
