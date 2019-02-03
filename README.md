@@ -276,7 +276,7 @@ Questo file crea vettori utili per l’output
 
 `post_data = dmst_post(sim_input, out_geom_data, geom_data, out_data, data_vel)`
 
-Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per gli input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ### `dmst_plot_update.m`
 
@@ -290,7 +290,7 @@ Questo file crea e aggiorna i plot di interesse ad ogni iterazione.
 |-|-|-|
 |`fig_out`  | Figura | Figura dove creare/aggiornare plots |
 
-Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per i restanti input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ## Future work
 Segue una lista di possibili spunti per il miglioramento del codice, in ordine di crescente difficoltà di implementazione (circa), con relativi commenti.
@@ -313,6 +313,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4ODE3NjM1LC0xMTY4MTQ4MjAzLC0xNT
+eyJoaXN0b3J5IjpbMjg0NjE1MjU3LC0xMTY4MTQ4MjAzLC0xNT
 Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
 -->
