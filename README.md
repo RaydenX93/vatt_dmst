@@ -57,16 +57,16 @@ Questo file è la function da cui lanciare le simulazioni.
 
 |Nome  |Tipo  | Descrizione |
 |--|--|--|
-|`data_post`  | Struttura| Contiene vettori utili per l’output|
-|`data_geom`  | Struttura| prova2|
-|`data_vel`  | Struttura| prova2|
-|`data_out_geom`  | Matrice| prova2|
-|`data_out`  | Matrice| prova2|
-|`data_dyn`  | Matrice| prova2|
+|`data_post`  | Struttura | Contiene vettori utili per l’output|
+|`data_geom`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore|
+|`data_vel`  | Struttura | Contiene grandezze relative al flusso in ingresso|
+|`data_out_geom`  | Matrice| Contiene grandezze relative alla geometria del rotore e del flusso calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 16|
+|`data_out`  | Matrice| Contiene grandezze di output calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 8|
+|`data_dyn`  | Matrice| <![endif]--> Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz*n_ring*8|
 |`sim_input`  | Struttura | prova2|
 |`sim_settings`  | Struttura| prova2|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MjYzODI1OSwtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbLTE4NzY0MjYyMDcsLTQ5MDI2NTM5MF19
 -->
