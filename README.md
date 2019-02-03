@@ -8,6 +8,8 @@ Tutte le unità adottate in questo lavoro sono sempre SI, _m_ per le lunghezze, 
 Si consiglia di leggere il manuale nella sua interezza prima di effettuare simulazioni, possibilmente visionando il codice sorgente allo stesso tempo.
 
 ## Indice
+[Prerequisiti](#prerequisiti)
+[Come lanciare una simulazione normale](#Come lanciare una simulazione normale)
 
 
 ## Prerequisiti
@@ -287,6 +289,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgxNDgyMDMsLTE1NDQxNDAxMjEsMj
-A2NTQ3MTczMywtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbLTE1MjUxODM0OTMsLTExNjgxNDgyMDMsLT
+E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
 -->
