@@ -64,7 +64,9 @@ In questo paragrafo verranno investigati i singoli script, di cui verranno spieg
 
 ### `vatt_dmst.m`
 Questo file è la function da cui lanciare le simulazioni.
+
 **Sintassi**
+
 `[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, [output_file], [tsr_override]);`
 
 |Nome Output|Tipo  | Descrizione |
@@ -77,7 +79,7 @@ Questo file è la function da cui lanciare le simulazioni.
 |`data_dyn`  | Matrice | Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz **X** n_ring **X** 8 |
 |`sim_input`  | Struttura | Contiene impostazioni della simulazione |
 |`sim_settings`  | Struttura| Contiene informazioni sui sottomodelli attivi |
-___
+
 |Nome Input|Tipo  | Descrizione |
 |-|-|-|
 |`vel_input`  | Matrice/Scalare | Contiene informazioni sul flusso indisturbato.<ul><li>_Simulazioni 2D_<br>Scalare della velocità.</li><li> _Simulazioni 3D_<br>Matrice di 2 colonne.<br>La prima indica le posizioni z a cui la velocità viene misurata da 0 (pelo libero del mare) a -∞ (fondale). La seconda, il valore di velocità. |</li></ul>
@@ -198,14 +200,18 @@ La definizione della matrice `data_dyn(k,i,x)` dipende dal tipo di modello di st
 Questo file è lo script che definisce le impostazioni della simulazione a livello di geometria di turbina, tipo di flusso, discretizzazione del rotore, ecc. Seguire i commenti nel file per configurare la simulazione come si desidera.
 
 **Sintassi**
+
 `[sim_settings, sim_input] = init_input`
+
 Per gli output si rimanda al paragrafo _vatt_dmst.m_.
 
 ### `init_geom.m`
 Questo file si occupa di realizzare la discretizzazione spaziale del rotore in nz*n_ring celle.
 
 **Sintassi**
+
 `[data_geom] = init_geom(sim_input)`
+
 Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 
 ### `init_vel.m`
@@ -213,7 +219,9 @@ Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 Questo file si occupa di applicare il flusso indisturbato ad ogni cella del rotore.
 
 **Sintassi**
+
 `[data_vel] = init_vel(sim_input,  sim_settings, data_geom, vel_input)`
+
 Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 
 ### `dmst_update.m`
@@ -221,7 +229,9 @@ Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 Questo file gestisce la singola iterazione del solutore DMST. Nello specifico, separa le informazioni disponibili per ogni piano di turbina _k_ e successivamente risolve in parallelo i singoli piani di turbina (sezione parfor).
 
 **Sintassi**
+
 `[data_out_geom, data_out, data_dyn] = dmst_update(sim_settings, sim_input, data_geom, data_vel)`
+
 Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 
 Si sottolinea che la variabile interna `dyn_input` è dichiarata come variabile di tipo *persistent* e pertanto continua ad esistere fra le varie chiamate di _dmst_update.m._
@@ -231,6 +241,7 @@ Si sottolinea che la variabile interna `dyn_input` è dichiarata come variabile 
 Questo file gestisce la soluzione del singolo piano di turbina. Viene risolta prima la parte upstream, trovando il fattore di induzione che fa tornare i bilanci per ogni cella azimutale della prima metà di turbina, poi c’è l’eventuale correzione di espansione dei tubi di flusso e successivamente viene risolto il downstream.
 
 **Sintassi**
+
 `[geom_out_data, out_data, dyn_data] = dmst_par_loop(sim_settings, sim_input, dmst_input)`
 
 |Nome Input|Tipo  | Descrizione |
@@ -244,12 +255,13 @@ Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
 Questo file risolve il singolo streamtube per il valore del fattore di induzione fornito.
 
 **Sintassi**
+
 `[f_eff, data_geom, data_out, data_dyn] = dmst_calc(sim_settings, sim_input, dmst_input, pos_theta, a, a_upstream)`
 
 |Nome Output|Tipo  | Descrizione |
 |-|-|-|
 |`f_eff`  | Scalare| <![endif]--> Differenza fra forza di spinta calcolata con teoria Actuator Disk e Blade Element |
-___
+
 |Nome Input|Tipo  | Descrizione |
 |-|-|-|
 |`pos_theta`  | Scalare | Indice della posizione azimutale |
@@ -265,6 +277,7 @@ Questo file crea vettori utili per l’output
 **Sintassi**
 
 `post_data = dmst_post(sim_input, out_geom_data, geom_data, out_data, data_vel)`
+
 Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 
 ### `dmst_plot_update.m`
@@ -302,6 +315,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUwNTc5NzQsLTExNjgxNDgyMDMsLT
+eyJoaXN0b3J5IjpbLTE3NjE0MDgyOTgsLTExNjgxNDgyMDMsLT
 E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
 -->
