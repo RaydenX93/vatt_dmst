@@ -77,55 +77,67 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 
 <table>  
 <tr>  
-	<th> <code>`data_out(k,i,x)` </code></th>    
+	<code>data_out(k,i,x)</code>
 </tr>  
 <tr>  
 	<td>1</td>  
 	<td>Fattore di induzione assiale non corretto</td>  
 	<td>5</td>  
-	<td>a</td>
+	<td>Fattore di perdita alle punte</td>
 </tr>  
 <tr>  
 	<td>2</td>  
 	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
 	<td>6</td>  
-	<td>a</td>
+	<td>CL senza perdita alle punte</td>
 </tr>  
 <tr>
 	<td>3</td>  
 	<td>CL con perdita alle punte</td>  
 	<td>7</td>  
-	<td>a</td>
+	<td>CD senza perdita alle punte</td>
 </tr>
 <tr>
 	<td>4</td>  
 	<td>CD con perdita alle punte</td>  
 	<td>8</td>  
-	<td>a</td>
+	<td>Fattore di induzione assiale dopo correzione espansione streamtubes</td>
+</tr>
+</table>
+
+<table>  
+<tr>  
+	<code>data_out_geom(k,i,x)</code>
+</tr>  
+<tr>  
+	<td>1</td>  
+	<td>Fattore di induzione assiale non corretto</td>  
+	<td>5</td>  
+	<td>Fattore di perdita alle punte</td>
+</tr>  
+<tr>  
+	<td>2</td>  
+	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
+	<td>6</td>  
+	<td>CL senza perdita alle punte</td>
+</tr>  
+<tr>
+	<td>3</td>  
+	<td>CL con perdita alle punte</td>  
+	<td>7</td>  
+	<td>CD senza perdita alle punte</td>
+</tr>
+<tr>
+	<td>4</td>  
+	<td>CD con perdita alle punte</td>  
+	<td>8</td>  
+	<td>Fattore di induzione assiale dopo correzione espansione streamtubes</td>
 </tr>
 </table>
 
 
-|a|b|c|d|
-|-|-|-|-|
-|1|a|5|a|
-|2|a|6|a|
-|3|a|7|a|
-|4|a|8|a|
-
-
-1. 
-2. 
-3. 
-4. 
-5. Fattore di perdita alle punte
-6. CL senza perdita alle punte
-7. CD senza perdita alle punte
-8. Fattore di induzione assiale dopo correzione espansione streamtubes
-
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAzNDIwNTAsMjA2NTQ3MTczMywtND
-kwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbMTAxOTU1MzY1LDIwNjU0NzE3MzMsLTQ5MD
+I2NTM5MF19
 -->
