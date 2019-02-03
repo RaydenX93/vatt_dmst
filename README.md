@@ -140,7 +140,7 @@ ___
 	<td><i>W<sub>0</sub></i></td>  
 	<td>a</td>  
 	<td>12</td>
-	<td>$\alpha$</td>
+	<td><i>Δz</i></td>
 	<td>a</td>
 </tr>
 <tr>  
@@ -148,7 +148,7 @@ ___
 	<td><i>W<sub>1</sub></i></td>  
 	<td>5</td>  
 	<td>13</td>
-	<td>a</td>
+	<td><i>θ</i> [rad]</td>
 	<td>a</td>
 </tr>  
 <tr>  
@@ -179,6 +179,6 @@ ___
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MzU3MzMwNCwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbLTczNTU3MDgxNCwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
