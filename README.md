@@ -69,11 +69,11 @@ ___
 |`output_file`  | Struttura | *Opzionale*. Indica il file di output dove salvare le simulazioni. Se non fornito, viene generato un nome dal programma. |
 |`tsr_override`  | Struttura | *Opzionale*. Imposta un TSR diverso da quello specificato in `init_input.m` |
 
-Per un esempio su come avviare una simulazione, fare riferimento allo script _ESEMPIO_lanciasim_singola.m_ e *ESEMPIO_dmst_optimizer.m*
+Per un esempio su come avviare una simulazione, fare riferimento allo script *ESEMPIO_lanciasim_singola.m* e *ESEMPIO_dmst_optimizer.m*
 
 I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. In caso di dubbio, risalire dal codice sorgente alla grandezza calcolata.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwMTQzOTg4LDIwNjU0NzE3MzMsLTQ5MD
-I2NTM5MF19
+eyJoaXN0b3J5IjpbLTIxNDE5NDM1NDIsMjA2NTQ3MTczMywtND
+kwMjY1MzkwXX0=
 -->
