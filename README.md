@@ -41,17 +41,16 @@ Al momento sono disponibili due set di dati posizionati in due cartelle.
 - Hz600mN010mw (griglia con risoluzione 600 m)
 - Hz200mN010mw (griglia con risoluzione 200 m)
 
-Il file con i dati è _out.`[<span></span](http://www<span></span)>nc_.
+Il file con i dati è _out.<span></span>nc_.
+1. Per preparare i dati alla simulazione DMST, avviare lo script _MIT_read_nc_data.m_ modificando la variabile pe_file al suo interno con il percorso al file .nc desiderato. Verrà prodotto, insieme ad altri file, il file _%nome_file%_processed.mat._
 
-<![if !supportLists]>1. <![endif]>Per preparare i dati alla simulazione DMST, avviare lo script _MIT_read_nc_data.m_ modificando la variabile pe_file al suo interno con il percorso al file .nc desiderato. Verrà prodotto, insieme ad altri file, il file _%nome_file%_processed.mat._
+2. Per avviare la simulazione MIT, aprire lo script MIT_run_simulation.m e modificare la variabile nome_file con il file _%nome_file%_processed.mat_ creato precedentemente (senza estensione).
 
-<![if !supportLists]>2. <![endif]>Per avviare la simulazione MIT, aprire lo script MIT_run_simulation.m e modificare la variabile nome_file con il file _%nome_file%_processed.mat_ creato precedentemente (senza estensione).
-
-<![if !supportLists]>3. <![endif]>Modificare la variabile sim_step per impostare la risoluzione desiderata.
+3. Modificare la variabile sim_step per impostare la risoluzione desiderata.
 
 <![if !supportLists]>4. <![endif]>Avviare lo script.
 
 <![if !supportLists]>5. <![endif]>I risultati complessivi sono salvati in _%nome_file%_sub_finished.mat._ Sono anche presenti i file delle singole simulazioni in una sottocartella.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbLTQ5NzgxMDc4MSwtNDkwMjY1MzkwXX0=
 -->
