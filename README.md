@@ -1,7 +1,7 @@
 # VATT DMST Code
 Questo documento illustrerà brevemente il funzionamento e la struttura del codice MATLAB per la valutazione di performance di una turbina marina ad asse verticale (VATT) mediante teoria DMST con aggiunta di sottomodelli per tener conto di fenomeni idrodinamici ulteriori.
 
-Per la teoria del modello, si rimanda al lavoro di tesi magistrale di Stefano Deluca dal titolo _**Development and validation of a tool for vertical axis tidal turbine performance evaluation in marine environments**_, scaricabile sul portale ETD dell’Università di Pisa ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
+Per la teoria del modello, si rimanda al lavoro di tesi magistrale di Stefano Deluca dal titolo _**Development and validation of a tool for vertical axis tidal turbine performance evaluation in marine environments**_, scaricabile sul portale *ETD* dell’*Università di Pisa* ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
 
 Tutte le unità adottate in questo lavoro sono sempre SI, _m_ per le lunghezze, _s_ per il tempo, _kg_ per la massa.
 
@@ -74,7 +74,7 @@ Per un esempio su come avviare una simulazione, fare riferimento allo script *ES
 
 I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. In caso di dubbio, risalire dal codice sorgente alla grandezza calcolata.
 
-Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cella in posizione azimutale _i_, variabile fra 1 (piano di turbina più in basso) e *n_ring*, e posizione verticale _k_, variabile fra 1 e *nz*.
+Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cella in posizione azimutale _i_, variabile fra 1 (piano di turbina più in basso, vicino al fondale) e *n_ring*, e posizione verticale _k_, variabile fra 1 e *nz*.
 
 <table>  
 <tr>  
@@ -286,6 +286,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTg4NTc3NywyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbLTE1NDQxNDAxMjEsMjA2NTQ3MTczMywtND
+kwMjY1MzkwXX0=
 -->
