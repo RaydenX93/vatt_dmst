@@ -61,13 +61,27 @@ Questo file è la function da cui lanciare le simulazioni.
 |`data_post`  | Struttura | Contiene vettori utili per l’output |
 |`data_geom`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore |
 |`data_vel`  | Struttura | Contiene grandezze relative al flusso in ingresso |
-|`data_out_geom`  | Matrice| Contiene grandezze relative alla geometria del rotore e del flusso calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 16 |
-|`data_out`  | Matrice| Contiene grandezze di output calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 8 |
-|`data_dyn`  | Matrice| Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz **X** n_ring **X** 8 |
+|`data_out_geom`  | Matrice | Contiene grandezze relative alla geometria del rotore e del flusso calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 16 |
+|`data_out`  | Matrice | Contiene grandezze di output calcolate su ogni cella del rotore. Dimensioni: nz **X** n_ring **X** 8 |
+|`data_dyn`  | Matrice | Contiene grandezze relative alla routine di stallo dinamico per ogni cella del rotore. È una matrice nz **X** n_ring **X** 8 |
 |`sim_input`  | Struttura | Contiene impostazioni della simulazione |
 |`sim_settings`  | Struttura| Contiene informazioni sui sottomodelli attivi |
 
+|Nome Input|Tipo  | Descrizione |
+|-|-|-|
+|`vel_input`  | Matrice/Scalare | Contiene informazioni sul flusso indisturbato.
+- _Simulazioni 2D_
+Scalare della velocità.
+
+<![if !supportLists]>· <![endif]>_Simulazioni 3D_
+
+Matrice di 2 colonne.
+
+La prima indica le posizioni z a cui la velocità viene misurata da 0 (pelo libero del mare) a <![if !msEquation]>  <![endif]> (fondale). La seconda, il valore di velocità. |
+|`output_file`  | Struttura | Contiene grandezze informazioni sulla geometria calcolata del rotore |
+|`tsr_override`  | Struttura | Contiene grandezze relative al flusso in ingresso |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDk2Njk5MjYsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbMzY2ODI2MDE3LC00OTAyNjUzOTBdfQ==
 -->
