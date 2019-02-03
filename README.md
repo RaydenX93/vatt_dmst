@@ -116,30 +116,70 @@ ___
 	<td>Fattore di induzione assiale non corretto</td>  
 	<td>5</td>  
 	<td>Fattore di perdita alle punte</td>
+	<td>a</td>
+	<td>a</td>
 </tr>  
 <tr>  
 	<td>2</td>  
 	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
 	<td>6</td>  
 	<td>CL senza perdita alle punte</td>
+	<td>a</td>
+	<td>a</td>
 </tr>  
 <tr>
 	<td>3</td>  
 	<td>CL con perdita alle punte</td>  
 	<td>7</td>  
 	<td>CD senza perdita alle punte</td>
+	<td>a</td>
+	<td>a</td>
 </tr>
 <tr>
 	<td>4</td>  
 	<td>CD con perdita alle punte</td>  
 	<td>8</td>  
 	<td>Fattore di induzione assiale dopo correzione espansione streamtubes</td>
+	<td>a</td>
+	<td>a</td>
+</tr>
+<tr>  
+	<td>1</td>  
+	<td>Fattore di induzione assiale non corretto</td>  
+	<td>5</td>  
+	<td>Fattore di perdita alle punte</td>
+	<td>a</td>
+	<td>a</td>
+</tr>  
+<tr>  
+	<td>2</td>  
+	<td>Fattore di induzione assiale a monte, se la cella è in downstream</td>  
+	<td>6</td>  
+	<td>CL senza perdita alle punte</td>
+	<td>a</td>
+	<td>a</td>
+</tr>  
+<tr>
+	<td>3</td>  
+	<td>CL con perdita alle punte</td>  
+	<td>7</td>  
+	<td>CD senza perdita alle punte</td>
+	<td>a</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>4</td>  
+	<td>CD con perdita alle punte</td>  
+	<td>8</td>  
+	<td>Fattore di induzione assiale dopo correzione espansione streamtubes</td>
+	<td>a</td>
+	<td>a</td>
 </tr>
 </table>
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc3MTg2NTgyLDIwNjU0NzE3MzMsLTQ5MD
-I2NTM5MF19
+eyJoaXN0b3J5IjpbLTEzNTAzNjI2NDQsMjA2NTQ3MTczMywtND
+kwMjY1MzkwXX0=
 -->
