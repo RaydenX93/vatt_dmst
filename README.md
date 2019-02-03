@@ -41,7 +41,7 @@ Al momento sono disponibili due set di dati posizionati in due cartelle.
 - Hz600mN010mw (griglia con risoluzione 600 m)
 - Hz200mN010mw (griglia con risoluzione 200 m)
 
-Il file con i dati è _out.nc_.
+Il file con i dati è _out.`[<span></span](http://www<span></span)>nc_.
 
 <![if !supportLists]>1. <![endif]>Per preparare i dati alla simulazione DMST, avviare lo script _MIT_read_nc_data.m_ modificando la variabile pe_file al suo interno con il percorso al file .nc desiderato. Verrà prodotto, insieme ad altri file, il file _%nome_file%_processed.mat._
 
@@ -53,5 +53,5 @@ Il file con i dati è _out.nc_.
 
 <![if !supportLists]>5. <![endif]>I risultati complessivi sono salvati in _%nome_file%_sub_finished.mat._ Sono anche presenti i file delle singole simulazioni in una sottocartella.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTIzNzcyMDhdfQ==
+eyJoaXN0b3J5IjpbLTQ5MDI2NTM5MF19
 -->
