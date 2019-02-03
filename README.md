@@ -199,9 +199,19 @@ Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 Questo file si occupa di applicare il flusso indisturbato ad ogni cella del rotore.
 
 **Sintassi**
-`[data_vel] = init_vel(sim_input, sim_settings,data_geom, vel_input)`
+`[data_vel] = init_vel(sim_input,  sim_settings, data_geom, vel_input)`
 Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
+
+### `dmst_update.m`
+
+Questo file gestisce la singola iterazione del solutore DMST. Nello specifico, separa le informazioni disponibili per ogni piano di turbina _k_ e successivamente risolve in parallelo i singoli piani di turbina (sezione parfor).
+
+**Sintassi**
+`[data_out_geom, data_out, data_dyn] = dmst_update(sim_settings, sim_input, data_geom, data_vel)`
+Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
+
+Si sottolinea che la variabile interna `dyn_input` è dichiarata come variabile di tipo persistent e pertanto continua ad esistere fra le varie chiamate di _dmst_update.m._
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzA3NjgxMCwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbLTcwMDkxMjcyNCwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
