@@ -73,7 +73,10 @@ Per un esempio su come avviare una simulazione, fare riferimento allo script *ES
 
 I nomi delle variabili all’interno delle strutture sono piuttosto intuitivi. In caso di dubbio, risalire dal codice sorgente alla grandezza calcolata.
 
+Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cella in posizione azimutale _i_, variabile fra 1 (piano di turbina più in basso) e *n_ring*, e posizione verticale _k_, variabile fra 1 e *nz*.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDE5NDM1NDIsMjA2NTQ3MTczMywtND
-kwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbMjE0MjA0ODQyMCwyMDY1NDcxNzMzLC00OT
+AyNjUzOTBdfQ==
 -->
