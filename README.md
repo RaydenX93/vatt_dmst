@@ -57,20 +57,16 @@ Questo file è la function da cui lanciare le simulazioni.
 
 |Nome  |Tipo  | Descrizione |
 |--|--|--|
-|`data_post`  | prova | prova2|
-|`data_post`  | prova | prova2|
-|--|--|--|
-|`data_post`  | prova | prova2|
-|--|--|--|
-|`data_post`  | prova | prova2|
-|--|--|--|
-|`data_post`  | prova | prova2|
-|--|--|--|
-|`data_post`  | prova | prova2|
-|--|--|--|
-|`data_post`  | prova | prova2|
+|`data_post`  | Struttura| Contiene vettori utili per l’output|
+|`data_geom`  | Struttura| prova2|
+|`data_vel`  | Struttura| prova2|
+|`data_out_geom`  | Matrice| prova2|
+|`data_out`  | Matrice| prova2|
+|`data_dyn`  | Matrice| prova2|
+|`sim_input`  | Struttura | prova2|
+|`sim_settings`  | Struttura| prova2|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDY4MzgzOTcsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbLTI3MjYzODI1OSwtNDkwMjY1MzkwXX0=
 -->
