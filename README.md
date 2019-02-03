@@ -201,7 +201,7 @@ Questo file è lo script che definisce le impostazioni della simulazione a livel
 
 `[sim_settings, sim_input] = init_input`
 
-Per gli output si rimanda al paragrafo _vatt_dmst.m_.
+Per gli output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ### `init_geom.m`
 Questo file si occupa di realizzare la discretizzazione spaziale del rotore in nz*n_ring celle.
@@ -210,7 +210,7 @@ Questo file si occupa di realizzare la discretizzazione spaziale del rotore in n
 
 `[data_geom] = init_geom(sim_input)`
 
-Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per gli input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ### `init_vel.m`
 
@@ -220,7 +220,7 @@ Questo file si occupa di applicare il flusso indisturbato ad ogni cella del roto
 
 `[data_vel] = init_vel(sim_input,  sim_settings, data_geom, vel_input)`
 
-Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per gli input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ### `dmst_update.m`
 
@@ -230,7 +230,7 @@ Questo file gestisce la singola iterazione del solutore DMST. Nello specifico, s
 
 `[data_out_geom, data_out, data_dyn] = dmst_update(sim_settings, sim_input, data_geom, data_vel)`
 
-Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per gli input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 Si sottolinea che la variabile interna `dyn_input` è dichiarata come variabile di tipo *persistent* e pertanto continua ad esistere fra le varie chiamate di _dmst_update.m._
 
@@ -246,7 +246,7 @@ Questo file gestisce la soluzione del singolo piano di turbina. Viene risolta pr
 |-|-|-|
 |`dmst_input`  | Struttura | Contiene informazioni sul singolo piano da risolvere|
 
-Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per i restanti input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ### `dmst_calc.m`
 
@@ -266,7 +266,7 @@ Questo file risolve il singolo streamtube per il valore del fattore di induzione
 |`a`  | Scalare | Fattore di induzione da adottare |
 |`a_upstream`  | Scalare | Fattore di induzione della cella a monte, se applicabile |
 
-Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per i restanti input e output si rimanda al paragrafo [`vatt_dmst.m`](#vatt_dmstm).
 
 ### `dmst_post.m`
 
@@ -313,6 +313,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzk0NzAyMSwtMTE2ODE0ODIwMywtMT
-U0NDE0MDEyMSwyMDY1NDcxNzMzLC00OTAyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbNjM4ODE3NjM1LC0xMTY4MTQ4MjAzLC0xNT
+Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
 -->
