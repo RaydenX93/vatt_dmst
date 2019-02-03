@@ -258,7 +258,7 @@ Questo file risolve il singolo streamtube per il valore del fattore di induzione
 
 |Nome Output|Tipo  | Descrizione |
 |-|-|-|
-|`f_eff`  | Scalare| <![endif]--> Differenza fra forza di spinta calcolata con teoria Actuator Disk e Blade Element |
+|`f_eff`  | Scalare| Differenza fra forza di spinta calcolata con teoria Actuator Disk e Blade Element |
 
 |Nome Input|Tipo  | Descrizione |
 |-|-|-|
@@ -313,6 +313,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0NjE1MjU3LC0xMTY4MTQ4MjAzLC0xNT
-Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbMTY0MzI0MjgzNiwtMTE2ODE0ODIwMywtMT
+U0NDE0MDEyMSwyMDY1NDcxNzMzLC00OTAyNjUzOTBdfQ==
 -->
