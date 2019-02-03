@@ -223,6 +223,29 @@ Questo file gestisce la soluzione del singolo piano di turbina. Viene risolta pr
 |-|-|-|
 |`dmst_input`  | Struttura | Contiene informazioni sul singolo piano da risolvere|
 
+Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
+
+### `dmst_calc.m`
+
+Questo file risolve il singolo streamtube per il valore del fattore di induzione fornito.
+
+**Sintassi**
+`[f_eff, data_geom, data_out, data_dyn] = dmst_calc(sim_settings, sim_input, dmst_input, pos_theta, a, a_upstream)`
+
+**Output**
+
+_Nome_
+
+_Tipo_
+
+_Descrizione_
+
+f_eff
+
+Scalare
+
+Differenza fra forza di spinta calcolata con teoria Actuator Disk e Blade Element
+
 **Input**
 
 _Nome_
@@ -231,14 +254,26 @@ _Tipo_
 
 _Descrizione_
 
-dmst_input
+pos_theta
 
-Struttura
+Scalare
 
-Struttura che contiene informazioni sul singolo piano da risolvere
+Indice della posizione azimutale
+
+a
+
+Scalare
+
+Fattore di induzione da adottare
+
+a_upstream
+
+Scalare
+
+Fattore di induzione della cella a monte, se applicabile
 
 Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMTUxMTc3LDIwNjU0NzE3MzMsLTQ5MD
-I2NTM5MF19
+eyJoaXN0b3J5IjpbLTExNzA5ODE0NzEsMjA2NTQ3MTczMywtND
+kwMjY1MzkwXX0=
 -->
