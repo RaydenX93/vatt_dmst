@@ -117,7 +117,7 @@ ___
 	<td>Raggio</td>  
 	<td>9</td>
 	<td><i>cos(α)</i></td>
-	<td>a</td>
+	<td>Coseno angolo di attacco</td>
 </tr>  
 <tr>  
 	<td>2</td>  
@@ -125,7 +125,7 @@ ___
 	<td>Coseno pos. azimutale</td>  
 	<td>10</td>
 	<td><i>α</i> [deg]</td>
-	<td>a</td>
+	<td>Angolo di attacco</td>
 </tr>  
 <tr>
 	<td>3</td>  
@@ -133,7 +133,7 @@ ___
 	<td>Seno pos. azimutale</td>  
 	<td>11</td>
 	<td><i>α<sub>virt</sub></i></td>
-	<td>a</td>
+	<td>Angolo di attacco virtua</td>
 </tr>
 <tr>
 	<td>4</td>  
@@ -146,7 +146,7 @@ ___
 <tr>  
 	<td>5</td>  
 	<td><i>W<sub>1</sub></i></td>  
-	<td>5</td>  
+	<td>Componente verticale (perpendicolare flusso) di vel. relativa</td>  
 	<td>13</td>
 	<td><i>θ</i> [rad]</td>
 	<td>a</td>
@@ -154,7 +154,7 @@ ___
 <tr>  
 	<td>6</td>  
 	<td><i>ModW</i></td>  
-	<td>6</td>  
+	<td>Modulo vel. relativa</td>  
 	<td>14</td>
 	<td><i>TSR<sub>loc</sub></i></td>
 	<td>a</td>
@@ -162,7 +162,7 @@ ___
 <tr>
 	<td>7</td>  
 	<td><i>Re<sub>c</sub></i></td>  
-	<td>7</td>  
+	<td>Numero di Reynolds basato su corda</td>  
 	<td>15</td>
 	<td><i>U</i></td>
 	<td>a</td>
@@ -170,7 +170,7 @@ ___
 <tr>
 	<td>8</td>  
 	<td><i>sin(α)</i></td>  
-	<td>8</td>  
+	<td>Seno angolo di attacco</td>  
 	<td>16</td>
 	<td><i>V</i></td>
 	<td>a</td>
@@ -179,6 +179,6 @@ ___
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNTE1MjE0MywyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbMTcyMTA0NDQ1MywyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
