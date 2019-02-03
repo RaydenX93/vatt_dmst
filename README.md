@@ -54,10 +54,24 @@ In questo paragrafo verranno investigati i singoli script, di cui verranno spieg
 ### `vatt_dmst.m`
 Questo file è la function da cui lanciare le simulazioni.
 `[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, [output_file], [tsr_override]);`
+
 |Nome  |Tipo  | Descrizione |
 |--|--|--|
-|  |  |
+|`data_post`  |  |
+|--|--|--|
+|``  |  |
+|--|--|--|
+|``  |  |
+|--|--|--|
+|``  |  |
+|--|--|--|
+|``  |  |
+|--|--|--|
+|``  |  |
+|--|--|--|
+|``  |  |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTA3NTI3NDAsLTQ5MDI2NTM5MF19
+eyJoaXN0b3J5IjpbMjg1NzA0MjMzLC00OTAyNjUzOTBdfQ==
 -->
