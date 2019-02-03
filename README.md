@@ -50,6 +50,7 @@ In questo paragrafo verranno investigati i singoli script, di cui verranno spieg
 
 ### `vatt_dmst.m`
 Questo file è la function da cui lanciare le simulazioni.
+**Sintassi**
 `[data_post, data_geom, data_vel, data_out_geom, data_out, data_dyn, sim_input, sim_settings] = vatt_dmst(vel_input, [output_file], [tsr_override]);`
 
 |Nome Output|Tipo  | Descrizione |
@@ -177,8 +178,13 @@ ___
 </tr>
 </table>
 
-La definizione della matrice data_dyn(k,i,x) dipende dal tipo di modello di stallo dinamico adottato. Si invita ad ispezionare _dmst_calc.m_ per maggiori informazioni. Queste informazioni non dovrebbero essere particolarmente rilevanti ai fini dell’output del codice DMST.
+La definizione della matrice `data_dyn(k,i,x)` dipende dal tipo di modello di stallo dinamico adottato. Si invita ad ispezionare _dmst_calc.m_ per maggiori informazioni. Queste informazioni non dovrebbero essere particolarmente rilevanti ai fini dell’output del codice DMST.
+
+### `init_input.m`
+Questo file è lo script che definisce le impostazioni della simulazione a livello di geometria di turbina, tipo di flusso, discretizzazione del rotore, ecc. Seguire i commenti nel file per configurare la simulazione come si desidera.
+**Sintassi**
+`[sim_settings, sim_input] = init_input`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzE5ODg3OSwyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbLTE3NDkwMTM3MzQsMjA2NTQ3MTczMywtND
+kwMjY1MzkwXX0=
 -->
