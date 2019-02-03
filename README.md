@@ -8,20 +8,20 @@ Tutte le unità adottate in questo lavoro sono sempre SI, _m_ per le lunghezze, 
 Si consiglia di leggere il manuale nella sua interezza prima di effettuare simulazioni, possibilmente visionando il codice sorgente allo stesso tempo.
 
 ## Indice
-[Prerequisiti](#prerequisiti)
-[Come lanciare una simulazione normale](#come-lanciare-una-simulazione-normale)
-[Come lanciare una simulazione con i dati MIT](#Come-lanciare-una-simulazione-con-i-dati-MIT)
-[Struttura dei file](#Struttura-dei-file)
-[`vatt_dmst.m`](#vatt_dmst.m)
-[`init_input.m`](#)
-[`init_geom.m`](#)
-[`init_vel.m`](#)
-[`dmst_update.m`](#)
-[`dmst_par_loop.m`](#)
-[`dmst_calc.m`]()
-[`dmst_post.m`]()
-[`dmst_plot_update.m`]()
-Future work
+- [Prerequisiti](#prerequisiti)
+- [Come lanciare una simulazione normale](#come-lanciare-una-simulazione-normale)
+- [Come lanciare una simulazione con i dati MIT](#Come-lanciare-una-simulazione-con-i-dati-MIT)
+* [Struttura dei file](#Struttura-dei-file)
+[`vatt_dmst.m`](#vatt_dmstm)
+[`init_input.m`](#init_inputm)
+[`init_geom.m`](#init_inputm)
+[`init_vel.m`](#init_inputm)
+[`dmst_update.m`](#init_inputm)
+[`dmst_par_loop.m`](#init_inputm)
+[`dmst_calc.m`](#init_inputm)
+[`dmst_post.m`](#init_inputm)
+[`dmst_plot_update.m`](#dmst_plot_updatem)
+* [Future work](#Future-work)
 
 
 ## Prerequisiti
@@ -301,6 +301,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjUwODM5NjksLTExNjgxNDgyMDMsLT
-E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbNTAzNzEzODE1LC0xMTY4MTQ4MjAzLC0xNT
+Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
 -->
