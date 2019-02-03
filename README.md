@@ -240,24 +240,25 @@ ___
 |-|-|-|
 |`pos_theta`  | Scalare | Indice della posizione azimutale |
 |`a`  | Scalare | Fattore di induzione da adottare |
-|`a_upstream`  | Scalare | <![endif]--> Fattore di induzione della cella a monte, se applicabile|
+|`a_upstream`  | Scalare | Fattore di induzione della cella a monte, se applicabile |
 
+Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
 
+### `dmst_post.m`
 
+Questo file crea vettori utili per l’output
 
-**Output**
+**Sintassi**
+`post_data = dmst_post(sim_input, out_geom_data, geom_data, out_data, data_vel)`
+Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 
-_Nome_
+### `dmst_plot_update.m`
 
-_Tipo_
+Questo file crea e aggiorna i plot di interesse ad ogni iterazione.
 
-_Descrizione_
+#### Sintassi
 
-f_eff
-
-Scalare
-
-Differenza fra forza di spinta calcolata con teoria Actuator Disk e Blade Element
+dmst_plot_update(fig_out, data_post)
 
 **Input**
 
@@ -267,26 +268,14 @@ _Tipo_
 
 _Descrizione_
 
-pos_theta
+fig_out
 
-Scalare
+Figura
 
-Indice della posizione azimutale
+Figura dove creare/aggiornare plots
 
-a
-
-Scalare
-
-Fattore di induzione da adottare
-
-a_upstream
-
-Scalare
-
-Fattore di induzione della cella a monte, se applicabile
-
-Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
+Per gli input e output si rimanda al paragrafo _vatt_dmst.m_.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODM0NzQ3NiwyMDY1NDcxNzMzLC00OT
-AyNjUzOTBdfQ==
+eyJoaXN0b3J5IjpbNzY4MjA5OTI5LDIwNjU0NzE3MzMsLTQ5MD
+I2NTM5MF19
 -->
