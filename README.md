@@ -14,14 +14,26 @@ Il programma è stato sviluppato e testato su sistema operativo **Windows 10 (64
 
 È necessario installare MATLAB R2018b con pacchetti:
 
- - MATLAB Coder 4.1 Parallel Computing Toolbox 6.13 Image Processing
-   Toolbox 10.3 (solo per simulazioni MIT)
+ - MATLAB Coder 4.1 
+ - Parallel Computing Toolbox 6.13 
+ - Image Processing Toolbox 10.3 (solo per simulazioni MIT)
 
 Successivamente bisogna installare:
 
-<![if !supportLists]>· <![endif]>MATLAB Support for MinGW-w64 C/C++ Compiler ([Link](https://it.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler))
+ - MATLAB Support for MinGW-w64 C/C++ Compiler ([Link](https://it.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler))
 
 L’uso di versioni diverse non è stato testato.
+<![endif]-->
+
+# Come lanciare una simulazione normale
+
+Questo paragrafo è volutamente discorsivo. Si rimanda all’analisi dei singoli file per informazioni sulla sintassi degli script.
+
+<![if !supportLists]>1. <![endif]>Aprire il file _init_input.m_ e definire le opzioni della simulazione.
+
+<![if !supportLists]>2. <![endif]>Lanciare la funzione _dmst_vatt.m_ specificando il profilo di velocità da usare, per simulazioni 3D, oppure semplicemente il valore di velocità del flusso, per simulazioni 2D. Facoltativamente, definire il nome del file di output.
+
+<![if !supportLists]>3. <![endif]>Realizzare i plot desiderati usando i dati di output.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjQwNzM2MF19
+eyJoaXN0b3J5IjpbNDUwNjkyNTExXX0=
 -->
