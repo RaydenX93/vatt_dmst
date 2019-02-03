@@ -232,6 +232,19 @@ Questo file risolve il singolo streamtube per il valore del fattore di induzione
 **Sintassi**
 `[f_eff, data_geom, data_out, data_dyn] = dmst_calc(sim_settings, sim_input, dmst_input, pos_theta, a, a_upstream)`
 
+|Nome Output|Tipo  | Descrizione |
+|-|-|-|
+|`f_eff`  | Scalare| <![endif]--> Differenza fra forza di spinta calcolata con teoria Actuator Disk e Blade Element |
+___
+|Nome Input|Tipo  | Descrizione |
+|-|-|-|
+|`pos_theta`  | Scalare | Indice della posizione azimutale |
+|`a`  | Scalare | Fattore di induzione da adottare |
+|`a_upstream`  | Scalare | <![endif]--> Fattore di induzione della cella a monte, se applicabile|
+
+
+
+
 **Output**
 
 _Nome_
@@ -274,6 +287,6 @@ Fattore di induzione della cella a monte, se applicabile
 
 Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA5ODE0NzEsMjA2NTQ3MTczMywtND
-kwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbLTk1ODM0NzQ3NiwyMDY1NDcxNzMzLC00OT
+AyNjUzOTBdfQ==
 -->
