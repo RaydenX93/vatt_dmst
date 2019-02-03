@@ -133,7 +133,7 @@ ___
 	<td>Seno pos. azimutale</td>  
 	<td>11</td>
 	<td><i>α<sub>virt</sub></i></td>
-	<td>Angolo di attacco virtua</td>
+	<td>Angolo di attacco virtuale</td>
 </tr>
 <tr>
 	<td>4</td>  
@@ -141,7 +141,7 @@ ___
 	<td> Componente orizzontale (parallela flusso) di vel. relativa</td>  
 	<td>12</td>
 	<td><i>Δz</i></td>
-	<td>a</td>
+	<td>Altezza del piano di turbina</td>
 </tr>
 <tr>  
 	<td>5</td>  
@@ -149,7 +149,7 @@ ___
 	<td>Componente verticale (perpendicolare flusso) di vel. relativa</td>  
 	<td>13</td>
 	<td><i>θ</i> [rad]</td>
-	<td>a</td>
+	<td>Posizione azimutale</td>
 </tr>  
 <tr>  
 	<td>6</td>  
@@ -157,7 +157,7 @@ ___
 	<td>Modulo vel. relativa</td>  
 	<td>14</td>
 	<td><i>TSR<sub>loc</sub></i></td>
-	<td>a</td>
+	<td>TSR locale nella cella</td>
 </tr>  
 <tr>
 	<td>7</td>  
@@ -165,7 +165,7 @@ ___
 	<td>Numero di Reynolds basato su corda</td>  
 	<td>15</td>
 	<td><i>U</i></td>
-	<td>a</td>
+	<td>Componente orizzontale (parallela flusso) di vel. assoluta</td>
 </tr>
 <tr>
 	<td>8</td>  
@@ -173,12 +173,12 @@ ___
 	<td>Seno angolo di attacco</td>  
 	<td>16</td>
 	<td><i>V</i></td>
-	<td>a</td>
+	<td>Componente verticale (perpendicolare flusso) di vel. assoluta</td>
 </tr>
 </table>
 
-
+La definizione della matrice data_dyn(k,i,x) dipende dal tipo di modello di stallo dinamico adottato. Si invita ad ispezionare _dmst_calc.m_ per maggiori informazioni. Queste informazioni non dovrebbero essere particolarmente rilevanti ai fini dell’output del codice DMST.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMTA0NDQ1MywyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbMTUxNzE5ODg3OSwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
