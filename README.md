@@ -1,7 +1,7 @@
 # VATT DMST Code
 Questo documento illustrerà brevemente il funzionamento e la struttura del codice MATLAB per la valutazione di performance di una turbina marina ad asse verticale (VATT) mediante teoria DMST con aggiunta di sottomodelli per tener conto di fenomeni idrodinamici ulteriori.
 
-Per la teoria del modello, si rimanda al lavoro di tesi di Stefano Deluca scaricabile sul portale ETD dell’Università di Pisa ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
+Per la teoria del modello, si rimanda al lavoro di tesi magistrale di Stefano Deluca dal titolo _**Development and validation of a tool for vertical axis tidal turbine performance evaluation in marine environments**_, scaricabile sul portale ETD dell’Università di Pisa ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
 
 Tutte le unità adottate in questo lavoro sono sempre SI, _m_ per le lunghezze, _s_ per il tempo, _kg_ per la massa.
 
@@ -264,7 +264,6 @@ Questo file crea e aggiorna i plot di interesse ad ogni iterazione.
 |`fig_out`  | Figura | Figura dove creare/aggiornare plots |
 
 Per i restanti input e output si rimanda al paragrafo _vatt_dmst.m_.
-<![endif]-->
 
 ## Future work
 Segue una lista di possibili spunti per il miglioramento del codice, in ordine di crescente difficoltà di implementazione (circa), con relativi commenti.
@@ -279,17 +278,14 @@ Si consiglia di effettuare nuove simulazioni CFD 2D con vario numero di pale, TS
 Migliorare la giustificazione fisica del modello corrente o trovarne uno nuovo. Sicuramente migliorare il fitting effettuato sul modello attuale.
 
 4. **Passare ad una discretizzazione verticale non più uniforme, con infittimento verso le punte.**
-
 Potrebbe essere piuttosto ostico, soprattutto perché bisognerebbe cambiare molte formule in giro per il codice.
 
-<![if !supportLists]>**5.** <![endif]>**Implementare effetti di curvatura del flusso.**
-
+5. **Implementare effetti di curvatura del flusso.**
 Bisogna prima capire perché il modello presente non funziona per codici DMST ma va bene per UDF su Fluent. Se non dovesse andar bene, va reimplementato in altro modo.
 
-<![if !supportLists]>**6.** <![endif]>**Migliorare modello di perdite alle punte**
-
+6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEwMDc4NDEwLDIwNjU0NzE3MzMsLTQ5MD
-I2NTM5MF19
+eyJoaXN0b3J5IjpbLTMwNTg4NTc3NywyMDY1NDcxNzMzLC00OT
+AyNjUzOTBdfQ==
 -->
