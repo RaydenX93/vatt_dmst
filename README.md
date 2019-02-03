@@ -1,7 +1,7 @@
 # VATT DMST Code
 Questo documento illustrerà brevemente il funzionamento e la struttura del codice MATLAB per la valutazione di performance di una turbina marina ad asse verticale (VATT) mediante teoria DMST con aggiunta di sottomodelli per tener conto di fenomeni idrodinamici ulteriori.
 
-Per la teoria del modello, si rimanda al lavoro di tesi magistrale di Stefano Deluca dal titolo _**Development and validation of a tool for vertical axis tidal turbine performance evaluation in marine environments**_, scaricabile sul portale *ETD* dell’*Università di Pisa* ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
+Per la teoria del modello, si rimanda al lavoro di tesi magistrale di Stefano Deluca dal titolo _**Development and validation of a tool for vertical axis tidal turbine performance evaluation in marine environments**_ scaricabile sul portale *ETD* dell’*Università di Pisa* ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
 
 Tutte le unità adottate in questo lavoro sono sempre SI, _m_ per le lunghezze, _s_ per il tempo, _kg_ per la massa.
 
@@ -308,6 +308,6 @@ Si consiglia di effettuare nuove simulazioni CFD 2D con vario numero di pale, TS
 
 6. **Migliorare modello di perdite alle punte**<br>Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTk0NDYxNzAsLTExNjgxNDgyMDMsLT
-E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbMTAyOTA5OTgwLC0xMTY4MTQ4MjAzLC0xNT
+Q0MTQwMTIxLDIwNjU0NzE3MzMsLTQ5MDI2NTM5MF19
 -->
