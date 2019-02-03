@@ -122,8 +122,6 @@ Ora verranno illustrate le grandezze calcolate nelle matrici, riferite alla cell
 </tr>
 </table>
 
-___
-
 <table>  
 <tr>  
 	<code>data_out_geom(k,i,x)</code>
@@ -315,6 +313,6 @@ Bisogna prima capire perché il modello presente non funziona per codici DMST ma
 6. **Migliorare modello di perdite alle punte**
 Servono dati da simulazioni CFD 3D, possibilmente dipendenti anche dalla posizione azimutale. Bisogna capire quanto è importante. Non particolarmente difficile di per sé, ma richiede simulazioni CFD molto lunghe.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjE0MDgyOTgsLTExNjgxNDgyMDMsLT
-E1NDQxNDAxMjEsMjA2NTQ3MTczMywtNDkwMjY1MzkwXX0=
+eyJoaXN0b3J5IjpbMjAwNzk0NzAyMSwtMTE2ODE0ODIwMywtMT
+U0NDE0MDEyMSwyMDY1NDcxNzMzLC00OTAyNjUzOTBdfQ==
 -->
