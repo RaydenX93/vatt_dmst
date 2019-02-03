@@ -132,7 +132,7 @@ ___
 	<td><i>sin(θ)</i></td>  
 	<td></td>  
 	<td>11</td>
-	<td><i>α)</i></td>
+	<td><i>α<sub>virt</sub></i></td>
 	<td>a</td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ ___
 	<td><i>W<sub>0</sub></i></td>  
 	<td>a</td>  
 	<td>12</td>
-	<td>a</td>
+	<td>$\alpha$</td>
 	<td>a</td>
 </tr>
 <tr>  
@@ -178,8 +178,7 @@ ___
 </table>
 
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTQ3MDAyMCwyMDY1NDcxNzMzLC00OT
+eyJoaXN0b3J5IjpbLTc1MzU3MzMwNCwyMDY1NDcxNzMzLC00OT
 AyNjUzOTBdfQ==
 -->
