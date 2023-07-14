@@ -3,6 +3,8 @@ Questo documento illustrerà brevemente il funzionamento e la struttura del codi
 
 Per la teoria del modello, si rimanda al lavoro di tesi magistrale di Stefano Deluca dal titolo _**Development and validation of a tool for vertical axis tidal turbine performance evaluation in marine environments**_ scaricabile sul portale *ETD* dell’*Università di Pisa* ([Link](https://etd.adm.unipi.it/theses/browse/by_type/LM.html)).
 
+Il seguente codice è stato utilizzato per il seguente articolo **Deluca, S., B. Rocchio, C. Foucart, C. Mirabito, S. Zanforlin, P.J. Haley, and P.F.J. Lermusiaux, 2018. Scalable Coupled Ocean and Water Turbine Modeling for Assessing Ocean Energy Extraction. In: Oceans '18 MTS/IEEE Charleston, 22-25 October 2018.** (doi:10.1109/oceans.2018.8604646)
+
 Tutte le unità adottate in questo lavoro sono sempre SI, _m_ per le lunghezze, _s_ per il tempo, _kg_ per la massa.
 
 Si consiglia di leggere il manuale nella sua interezza prima di effettuare simulazioni, possibilmente visionando il codice sorgente allo stesso tempo.
